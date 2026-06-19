@@ -1,0 +1,403 @@
+/* ═══════════════════════════════════════
+   TABLET — max-width: 1024px
+═══════════════════════════════════════ */
+@media (max-width: 1024px) {
+  .site-header__inner {
+    grid-template-columns: auto 1fr auto;
+    gap: 18px;
+    padding-block: 12px;
+  }
+
+  .brand {
+    grid-column: 1;
+  }
+
+  .site-nav {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .search-form {
+    grid-column: 2;
+  }
+
+  .header-actions {
+    grid-column: 3;
+  }
+
+  .hero-card {
+    min-height: 500px;
+    padding: 64px 70px;
+  }
+
+  .hero-slide {
+    inset: 64px 70px;
+  }
+
+  .genre-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .book-grid--five,
+  .book-grid--four {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .footer-inner {
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 42px;
+  }
+
+  .footer-column--newsletter {
+    grid-column: span 2;
+  }
+}
+
+/* ═══════════════════════════════════════
+   MOBILE — max-width: 768px
+═══════════════════════════════════════ */
+@media (max-width: 768px) {
+  .container {
+    width: min(100% - 24px, var(--container-width));
+  }
+
+  section {
+    padding-block: 36px;
+  }
+
+  .site-header__inner {
+    grid-template-columns: 1fr auto;
+    gap: 14px;
+  }
+
+  .brand {
+    grid-column: 1;
+  }
+
+  .header-actions {
+    grid-column: 2;
+    justify-self: end;
+  }
+
+  .sign-in-button {
+    display: none;
+  }
+
+  .search-form {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  .site-nav {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    gap: 10px 16px;
+  }
+
+  .site-nav__link {
+    font-size: 0.875rem;
+  }
+
+  .hero-slider {
+    padding-top: 24px;
+  }
+
+  .hero-card {
+    min-height: 520px;
+    padding: 52px 32px 76px;
+  }
+
+  .hero-slide {
+    inset: 52px 32px 76px;
+  }
+
+  .hero-title {
+    font-size: clamp(3rem, 13vw, 4.1rem);
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-arrow {
+    top: auto;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    transform: none;
+  }
+
+  .hero-arrow:hover {
+    transform: scale(1.06);
+  }
+
+  .hero-arrow--previous {
+    left: 24px;
+  }
+
+  .hero-arrow--next {
+    right: 24px;
+  }
+
+  .hero-dots {
+    bottom: 34px;
+  }
+
+  .section-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .genre-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .book-grid--five,
+  .book-grid--four {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .book-card {
+    padding: 10px;
+  }
+
+  .book-cover {
+    min-height: 220px;
+  }
+
+  .promo-banner {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding: 42px 30px;
+  }
+
+  .promo-button {
+    justify-self: start;
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 34px;
+    padding-block: 48px;
+  }
+
+  .footer-column--brand,
+  .footer-column--newsletter {
+    grid-column: 1 / -1;
+  }
+
+  .footer-bottom__inner {
+    min-height: auto;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-block: 18px;
+  }
+}
+
+/* ═══════════════════════════════════════
+   SMALL MOBILE — max-width: 480px
+═══════════════════════════════════════ */
+@media (max-width: 480px) {
+  .brand__name {
+    font-size: 1.1rem;
+  }
+
+  .brand__mark {
+    width: 32px;
+    height: 32px;
+  }
+
+  .bag-button {
+    min-height: 38px;
+    padding: 0 10px 0 16px;
+  }
+
+  .site-nav {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 4px;
+  }
+
+  .hero-card {
+    border-radius: 0;
+    margin-inline: -12px;
+    min-height: 520px;
+    padding: 48px 24px 76px;
+  }
+
+  .hero-slide {
+    inset: 48px 24px 76px;
+  }
+
+  .hero-title {
+    font-size: clamp(2.75rem, 16vw, 3.7rem);
+  }
+
+  .hero-description {
+    margin-top: 18px;
+  }
+
+  .genre-grid,
+  .book-grid--five,
+  .book-grid--four,
+  .footer-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .book-cover {
+    min-height: 270px;
+  }
+
+  .promo-banner {
+    padding: 36px 24px;
+  }
+
+  .promo-title {
+    font-size: clamp(2.1rem, 12vw, 3rem);
+  }
+
+  .newsletter-form {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ═══════════════════════════════════════
+   BOOK DETAIL — max-width: 900px
+═══════════════════════════════════════ */
+@media (max-width: 900px) {
+  .book-detail {
+    grid-template-columns: 280px minmax(0, 1fr);
+    gap: 42px;
+  }
+
+  .detail-specs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .book-detail {
+    grid-template-columns: 1fr;
+  }
+
+  .book-detail__media {
+    justify-content: flex-start;
+  }
+
+  .book-detail__cover {
+    max-width: 280px;
+  }
+
+  .detail-recommendation-grid {
+    width: auto;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .detail-meta {
+    display: grid;
+    gap: 6px;
+  }
+
+  .detail-meta li::after {
+    display: none;
+  }
+
+  .detail-actions {
+    display: grid;
+  }
+
+  .detail-add-button,
+  .detail-wishlist-button {
+    width: 100%;
+  }
+
+  .detail-specs,
+  .detail-recommendation-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-price {
+    width: auto;
+  }
+}
+
+/* ═══════════════════════════════════════
+   CATALOG — breakpoints
+═══════════════════════════════════════ */
+@media (max-width: 1024px) {
+  .catalog-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .catalog-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .catalog-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .catalog-title {
+    font-size: clamp(2.6rem, 12vw, 3.4rem);
+  }
+
+  .catalog-sort {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .catalog-sort select {
+    flex: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .catalog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-button {
+    flex: 1;
+  }
+}
+
+/* ═══════════════════════════════════════
+   CART — breakpoints
+═══════════════════════════════════════ */
+@media (max-width: 980px) {
+  .cart-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .cart-summary {
+    max-width: 520px;
+  }
+}
+
+@media (max-width: 640px) {
+  .cart-item {
+    grid-template-columns: 72px minmax(0, 1fr);
+    align-items: start;
+  }
+
+  .cart-item__quantity {
+    grid-column: 1 / -1;
+    justify-self: start;
+  }
+
+  .cart-item__total {
+    grid-column: 1 / -1;
+    justify-self: start;
+    text-align: left;
+  }
+}

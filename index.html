@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Pages & Co. bookstore homepage built with semantic HTML, pure CSS, and vanilla JavaScript."
+    />
+    <title>Pages & Co. | Independent Bookshop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+
+  <body>
+    <header class="site-header" data-site-header></header>
+
+    <main id="main-content">
+      <section class="hero-slider" id="hero" aria-labelledby="hero-title">
+        <div class="container">
+          <div class="hero-card">
+            <div class="hero-slide hero-slide--active" data-slide>
+              <div class="hero-content">
+                <p class="section-eyebrow hero-eyebrow">Staff favourites</p>
+
+                <h1 class="hero-title" id="hero-title">
+                  The shelves<br />
+                  we keep<br />
+                  coming back to
+                </h1>
+
+                <p class="hero-description">
+                  Our booksellers pick the titles they can’t stop pressing into
+                  customers’ hands.
+                </p>
+
+                <a class="hero-button" href="#bestsellers"
+                  >Browse bestsellers</a
+                >
+              </div>
+            </div>
+
+            <div class="hero-slide" data-slide>
+              <div class="hero-content">
+                <p class="section-eyebrow hero-eyebrow">New season reads</p>
+
+                <h2 class="hero-title">
+                  Stories for<br />
+                  slow mornings<br />
+                  and late nights
+                </h2>
+
+                <p class="hero-description">
+                  Discover new arrivals, loved classics, and quiet surprises
+                  from every shelf.
+                </p>
+
+                <a class="hero-button" href="#new-arrivals">See new arrivals</a>
+              </div>
+            </div>
+
+            <div class="hero-slide" data-slide>
+              <div class="hero-content">
+                <p class="section-eyebrow hero-eyebrow">The reading room</p>
+
+                <h2 class="hero-title">
+                  Books chosen<br />
+                  with care<br />
+                  every week
+                </h2>
+
+                <p class="hero-description">
+                  Join our weekly list for one handpicked recommendation in your
+                  inbox.
+                </p>
+
+                <a class="hero-button" href="#newsletter">Join free</a>
+              </div>
+            </div>
+
+            <button
+              class="hero-arrow hero-arrow--previous"
+              type="button"
+              aria-label="Previous slide"
+              data-carousel-previous
+            >
+              ‹
+            </button>
+
+            <button
+              class="hero-arrow hero-arrow--next"
+              type="button"
+              aria-label="Next slide"
+              data-carousel-next
+            >
+              ›
+            </button>
+
+            <div class="hero-dots" aria-label="Carousel slides">
+              <button
+                class="hero-dot hero-dot--active"
+                type="button"
+                aria-label="Go to slide 1"
+                data-carousel-dot
+              ></button>
+
+              <button
+                class="hero-dot"
+                type="button"
+                aria-label="Go to slide 2"
+                data-carousel-dot
+              ></button>
+
+              <button
+                class="hero-dot"
+                type="button"
+                aria-label="Go to slide 3"
+                data-carousel-dot
+              ></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="genres section"
+        id="genres"
+        aria-labelledby="genres-title"
+      >
+        <div class="container">
+          <p class="section-eyebrow">Find your shelf</p>
+          <h2 class="section-title" id="genres-title">Browse by genre</h2>
+
+          <div class="genre-grid" data-genres></div>
+        </div>
+      </section>
+
+      <section
+        class="book-section section"
+        id="featured"
+        aria-labelledby="featured-title"
+      >
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="section-eyebrow">Editor’s picks</p>
+              <h2 class="section-title" id="featured-title">
+                Featured this month
+              </h2>
+            </div>
+
+            <a class="section-link" href="#">View all →</a>
+          </div>
+
+          <div class="book-grid book-grid--five" data-books="featured"></div>
+        </div>
+      </section>
+
+      <section class="promo section" id="promo" aria-labelledby="promo-title">
+        <div class="container">
+          <article class="promo-banner">
+            <p class="section-eyebrow">The reading room</p>
+
+            <h2 class="promo-title" id="promo-title">
+              Free shipping on every order over $35
+            </h2>
+
+            <p class="promo-description">
+              Plus 15% off your first month and a weekly recommendation picked
+              just for you.
+            </p>
+
+            <a class="promo-button" href="#newsletter">Join free</a>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="book-section section"
+        id="bestsellers"
+        aria-labelledby="bestsellers-title"
+      >
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="section-eyebrow">Most loved</p>
+              <h2 class="section-title" id="bestsellers-title">Bestsellers</h2>
+            </div>
+
+            <a class="section-link" href="#">View all →</a>
+          </div>
+
+          <div class="book-grid book-grid--four" data-books="bestseller"></div>
+        </div>
+      </section>
+
+      <section
+        class="book-section section"
+        id="new-arrivals"
+        aria-labelledby="new-arrivals-title"
+      >
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="section-eyebrow">Hot off the press</p>
+              <h2 class="section-title" id="new-arrivals-title">
+                New arrivals
+              </h2>
+            </div>
+
+            <a class="section-link" href="#">View all →</a>
+          </div>
+
+          <div class="book-grid book-grid--four" data-books="new"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="footer" data-site-footer></footer>
+
+    <script type="module" src="./js/pages/home.js"></script>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Browse all books in the Pages & Co. collection."
+    />
+    <title>All Books | Pages & Co.</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+
+  <body>
+    <header class="site-header" data-site-header></header>
+
+    <main class="catalog-page" id="main-content">
+      <section class="catalog-section" aria-labelledby="catalog-title">
+        <div class="container">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="./index.html">Home</a>
+            <span>/</span>
+            <span>Books</span>
+          </nav>
+
+          <div class="catalog-heading">
+            <div>
+              <h1 class="catalog-title" id="catalog-title">All books</h1>
+              <p class="catalog-count" data-catalog-count>
+                0 titles in the collection
+              </p>
+            </div>
+          </div>
+
+          <div class="catalog-toolbar">
+            <div
+              class="catalog-filters"
+              data-category-filters
+              aria-label="Filter by category"
+            ></div>
+
+            <label class="catalog-sort">
+              <span>Sort by</span>
+              <select data-sort-select>
+                <option value="featured">Featured</option>
+                <option value="rating-desc">Highest rated</option>
+                <option value="price-asc">Price: Low to high</option>
+                <option value="price-desc">Price: High to low</option>
+                <option value="title-asc">Title: A to Z</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="catalog-divider"></div>
+
+          <div class="book-grid catalog-grid" data-catalog-grid></div>
+
+          <p class="catalog-empty" data-catalog-empty hidden>
+            No books found. Try another category or search term.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="footer" data-site-footer></footer>
+
+    <script type="module" src="./js/pages/books.js"></script>
+  </body>
+</html>

@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="View book details, read the description, and add to your bag at Pages &amp; Co."
+    />
+    <title>Book Details | Pages &amp; Co.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+  <body>
+    <header class="site-header" data-site-header></header>
+
+    <main class="detail-page" id="main-content">
+      <section class="book-detail-section" aria-labelledby="detail-title">
+        <div class="container">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="./index.html">Home</a>
+            <span>/</span>
+            <a href="./index.html#featured">Books</a>
+            <span>/</span>
+            <span data-detail="breadcrumb-title">The Lighthouse Keeper</span>
+          </nav>
+
+          <article class="book-detail">
+            <div class="book-detail__media">
+              <img
+                class="book-detail__cover"
+                data-detail="image"
+                src="./assets/images/books/the-lighthouse-keeper.jpg"
+                alt="Cover art for The Lighthouse Keeper"
+              />
+            </div>
+
+            <div class="book-detail__content">
+              <p class="detail-category" data-detail="category">Fiction</p>
+
+              <h1 class="detail-title" id="detail-title" data-detail="title">
+                The Lighthouse Keeper
+              </h1>
+
+              <p class="detail-author">
+                by <span data-detail="author">Mara Ellison</span>
+              </p>
+
+              <ul class="detail-meta" aria-label="Book summary">
+                <li>★ <span data-detail="rating">4.6</span></li>
+                <li><span data-detail="pages">312</span> pages</li>
+                <li><span data-detail="published">2023</span></li>
+              </ul>
+
+              <div class="detail-price">
+                <strong data-detail="price">$18.00</strong>
+                <del data-detail="old-price">$24.00</del>
+              </div>
+
+              <p class="detail-description" data-detail="description">
+                A widowed keeper and a runaway girl share a winter on a remote
+                island, learning what it means to keep a light burning for
+                someone else.
+              </p>
+
+              <div class="detail-actions">
+                <button
+                  class="detail-add-button"
+                  type="button"
+                  data-detail-add
+                  data-add-to-bag=""
+                >
+                  Add to bag — <span data-detail="button-price">$18.00</span>
+                </button>
+
+                <button class="detail-wishlist-button" type="button">
+                  ♡ Wishlist
+                </button>
+              </div>
+
+              <dl class="detail-specs">
+                <div>
+                  <dt>Format</dt>
+                  <dd data-detail="format">Paperback</dd>
+                </div>
+
+                <div>
+                  <dt>Pages</dt>
+                  <dd data-detail="spec-pages">312</dd>
+                </div>
+
+                <div>
+                  <dt>Published</dt>
+                  <dd data-detail="spec-published">2023</dd>
+                </div>
+
+                <div>
+                  <dt>Publisher</dt>
+                  <dd data-detail="publisher">Harbor &amp; Vale</dd>
+                </div>
+
+                <div>
+                  <dt>Language</dt>
+                  <dd data-detail="language">English</dd>
+                </div>
+
+                <div>
+                  <dt>ISBN</dt>
+                  <dd data-detail="isbn">978-1-23456-001-2</dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="detail-recommendations section"
+        aria-labelledby="recommendations-title"
+      >
+        <div class="container">
+          <h2 class="section-title" id="recommendations-title">
+            You may also like
+          </h2>
+
+          <div
+            class="book-grid detail-recommendation-grid"
+            data-related-books
+          ></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="footer" data-site-footer></footer>
+
+    <script type="module" src="./js/pages/book-detail.js"></script>
+  </body>
+</html>
