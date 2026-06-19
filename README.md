@@ -182,3 +182,43 @@ A local server is recommended because the project uses JavaScript ES modules.
 
 By: Pham Viet Thanh  
 Frontend Developer Intern Assessment
+
+## Project Screenshots:
+
+- home-1:
+<img width="1901" height="913" alt="image" src="https://github.com/user-attachments/assets/7e5e2e14-9e9e-4a73-b6ab-7aec58f6c63c" />
+
+--- 
+
+- home-2:
+<img width="1881" height="905" alt="image" src="https://github.com/user-attachments/assets/4663ec0b-85b3-4108-b996-ec97183d1704" />
+
+--- 
+
+- home-3:
+<img width="1899" height="905" alt="image" src="https://github.com/user-attachments/assets/8b47b7d4-3c1c-462a-9b53-6bc15a63bf6b" />
+
+--- 
+
+- list-page:
+<img width="1885" height="908" alt="image" src="https://github.com/user-attachments/assets/181d450b-c4bf-4dcc-949f-493cf8493240" />
+
+--- 
+
+- detail-page:
+<img width="1892" height="907" alt="image" src="https://github.com/user-attachments/assets/b388a1d0-3134-42ef-9cf5-8520e63e389e" />
+
+--- 
+
+- checkout:
+<img width="1896" height="911" alt="image" src="https://github.com/user-attachments/assets/55cb3bd1-4d74-428d-b978-e39ec57f1e34" />
+
+--- 
+
+- login-modal:
+<img width="1904" height="902" alt="image" src="https://github.com/user-attachments/assets/43ab9add-3ebb-4334-9fa1-5760bbba8c6e" />
+
+
+
+
+
