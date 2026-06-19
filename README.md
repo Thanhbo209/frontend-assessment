@@ -178,15 +178,7 @@ A local server is recommended because the project uses JavaScript ES modules.
 - `localStorage` was used for cart persistence because the assessment does not require a backend.
 - The sign-in modal is demo-only and validates input on the frontend without real authentication.
 
-## Limitations / Future Improvements
-
-- No real backend authentication is connected.
-- No payment checkout integration is included.
-- No inventory or stock management is included.
-- Accessibility could be expanded with a deeper audit, more screen reader testing, and reduced-motion refinements.
-- A larger production project could add routing, build tooling, automated tests, and API integration.
-
 ## Author
 
-Built by Pham Viet Thanh  
+By: Pham Viet Thanh  
 Frontend Developer Intern Assessment
