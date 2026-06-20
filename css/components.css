@@ -1,6 +1,6 @@
-/* ═══════════════════════════════════════════════════
+/* 
    NAVBAR / BRAND
-═══════════════════════════════════════════════════ */
+ */
 
 .brand {
   display: inline-flex;
@@ -58,7 +58,7 @@
   width: 100%;
 }
 
-/* ── Search form ──────────────────────────────────── */
+/*  Search form  */
 .search-form {
   position: relative;
 }
@@ -98,7 +98,7 @@
   box-shadow: 0 0 0 3px rgba(242, 184, 75, 0.18);
 }
 
-/* ── Sign-in button ───────────────────────────────── */
+/*  Sign-in button  */
 .sign-in-button {
   min-height: 38px;
   border: 1px solid var(--color-border);
@@ -117,7 +117,7 @@
   transform: translateY(-1px);
 }
 
-/* ── Bag button ───────────────────────────────────── */
+/*  Bag button  */
 .bag-button {
   min-height: 40px;
   display: inline-flex;
@@ -150,9 +150,9 @@
   font-weight: 900;
 }
 
-/* ═══════════════════════════════════════════════════
+/* 
    HERO CAROUSEL
-═══════════════════════════════════════════════════ */
+ */
 
 .hero-card {
   position: relative;
@@ -212,7 +212,7 @@
   box-shadow: 0 6px 28px rgba(242, 184, 75, 0.45);
 }
 
-/* ── Carousel arrows ──────────────────────────────── */
+/* Carousel arrows  */
 .hero-arrow {
   position: absolute;
   top: 50%;
@@ -244,7 +244,7 @@
   right: 18px;
 }
 
-/* ── Carousel dots ────────────────────────────────── */
+/*  Carousel dots  */
 .hero-dots {
   position: absolute;
   left: 50%;
@@ -275,7 +275,7 @@
   background: var(--color-primary);
 }
 
-/* ── Carousel slide transitions ───────────────────── */
+/*  Carousel slide transitions  */
 .hero-slide {
   position: absolute;
   inset: 78px 92px;
@@ -295,9 +295,9 @@
   transform: translateX(0);
 }
 
-/* ═══════════════════════════════════════════════════
+/* 
    GENRE CARDS
-═══════════════════════════════════════════════════ */
+ */
 
 .genre-card {
   position: relative;
@@ -389,9 +389,9 @@
   z-index: 2;
 }
 
-/* ═══════════════════════════════════════════════════
+/* 
    BOOK CARDS
-═══════════════════════════════════════════════════ */
+ */
 
 .book-cover-link {
   display: block;
@@ -416,7 +416,7 @@
   transform: translateY(-5px);
 }
 
-/* ── Book cover image area ─────────────────────────── */
+/*  Book cover image area  */
 .book-cover {
   position: relative;
   min-height: 255px;
@@ -479,7 +479,7 @@
   opacity: 0.9;
 }
 
-/* ── Fallback color covers ─────────────────────────── */
+/*  Fallback color covers  */
 .book-cover--green {
   background: linear-gradient(135deg, #204a36, #3a7558);
 }
@@ -508,7 +508,7 @@
   background: linear-gradient(135deg, #7a4e0e, #b07826);
 }
 
-/* ── Book badge ───────────────────────────────────── */
+/*  Book badge  */
 .book-badge {
   position: absolute;
   top: 10px;
@@ -524,7 +524,7 @@
   text-transform: uppercase;
 }
 
-/* ── Card body ────────────────────────────────────── */
+/*  Card body  */
 .book-card__body {
   padding-top: 12px;
   flex: 1;
@@ -583,7 +583,7 @@
   color: var(--color-muted);
 }
 
-/* ── Add to bag button (card) ─────────────────────── */
+/*  Add to bag button (card)  */
 .add-to-bag-button {
   width: 100%;
   min-height: 36px;
@@ -613,9 +613,9 @@
   opacity: 0.5;
 }
 
-/* ═══════════════════════════════════════════════════
+/* 
    PROMO BANNER
-═══════════════════════════════════════════════════ */
+ */
 
 .promo-banner {
   overflow: hidden;
@@ -672,9 +672,9 @@
   box-shadow: 0 6px 28px rgba(242, 184, 75, 0.45);
 }
 
-/* ═══════════════════════════════════════════════════
+/* 
    FOOTER
-═══════════════════════════════════════════════════ */
+ */
 
 .site-footer {
   background: var(--color-footer);
@@ -832,9 +832,9 @@
   font-size: 0.82rem;
 }
 
-/* ═══════════════════════════════════════════════════
+/* 
    BREADCRUMB
-═══════════════════════════════════════════════════ */
+ */
 
 .breadcrumb {
   display: flex;
@@ -851,9 +851,9 @@
   transform: none;
 }
 
-/* ═══════════════════════════════════════════════════
+/* 
    BOOK DETAIL PAGE
-═══════════════════════════════════════════════════ */
+ */
 
 .book-detail__media {
   display: flex;
@@ -1020,9 +1020,9 @@
   padding-top: 24px;
 }
 
-/* ═══════════════════════════════════════════════════
+/* 
    CATALOG PAGE
-═══════════════════════════════════════════════════ */
+ */
 
 .catalog-title {
   font-size: clamp(3rem, 5vw, 4.2rem);
@@ -1116,9 +1116,9 @@
   font-size: 1rem;
 }
 
-/* ═══════════════════════════════════════════════════
+/* 
    CART PAGE
-═══════════════════════════════════════════════════ */
+ */
 
 .cart-title {
   margin-top: 12px;
@@ -1223,7 +1223,7 @@
   font-weight: 950;
 }
 
-/* ── Cart summary panel ───────────────────────────── */
+/*  Cart summary panel  */
 .cart-summary {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
@@ -1299,7 +1299,7 @@
   font-size: 0.84rem;
 }
 
-/* ── Empty cart ───────────────────────────────────── */
+/*  Empty cart  */
 .cart-empty {
   max-width: 540px;
   margin-top: 40px;
@@ -1339,9 +1339,9 @@
   background: var(--color-primary-dark);
 }
 
-/* ═══════════════════════════════════════════════════
+/* 
    LOGIN / AUTH MODAL
-═══════════════════════════════════════════════════ */
+ */
 
 /* Wrapper — covers the full viewport */
 .auth-modal {

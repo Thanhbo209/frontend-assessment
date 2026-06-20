@@ -1,4 +1,4 @@
-/* ── Site header ─────────────────────────────────── */
+/*  Site header  */
 .site-header {
   position: sticky;
   top: 0;
@@ -30,7 +30,7 @@
   gap: 14px;
 }
 
-/* ── Hero ─────────────────────────────────────────── */
+/*  Hero  */
 .hero-slider {
   padding-top: 36px;
   padding-bottom: 32px;
@@ -46,7 +46,7 @@
   padding: 78px 92px;
 }
 
-/* ── Genre grid ───────────────────────────────────── */
+/*  Genre grid  */
 .genre-grid {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -54,7 +54,7 @@
   margin-top: 28px;
 }
 
-/* ── Book grid ────────────────────────────────────── */
+/*  Book grid  */
 .book-grid {
   display: grid;
   gap: 28px;
@@ -68,7 +68,7 @@
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
-/* ── Promo ────────────────────────────────────────── */
+/*  Promo  */
 .promo {
   padding-block: 36px;
 }
@@ -82,7 +82,7 @@
   padding: 58px 56px;
 }
 
-/* ── Footer ───────────────────────────────────────── */
+/*  Footer  */
 .site-footer {
   margin-top: 48px;
 }
@@ -102,7 +102,7 @@
   gap: 24px;
 }
 
-/* ── Book detail page ─────────────────────────────── */
+/*  Book detail page  */
 .detail-page {
   padding-top: 36px;
 }
@@ -123,7 +123,7 @@
   grid-template-columns: repeat(2, 180px);
 }
 
-/* ── Catalog page ─────────────────────────────────── */
+/*  Catalog page  */
 .catalog-page {
   padding-top: 36px;
 }
@@ -163,7 +163,7 @@
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
-/* ── Cart page ────────────────────────────────────── */
+/*  Cart page  */
 .cart-page {
   min-height: 62vh;
   padding-top: 36px;

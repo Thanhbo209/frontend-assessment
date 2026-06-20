@@ -35,7 +35,6 @@ input::placeholder {
   color: var(--color-muted);
 }
 
-/* ── Focus states ────────────────────────────────── */
 :focus-visible {
   outline: 2px solid var(--color-primary);
   outline-offset: 3px;
@@ -58,7 +57,6 @@ a:hover {
   transform: translateY(-1px);
 }
 
-/* ── Section typography helpers ──────────────────── */
 .section-eyebrow {
   color: var(--color-primary);
   font-size: 0.72rem;

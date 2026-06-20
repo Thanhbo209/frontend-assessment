@@ -12,6 +12,9 @@ import { renderLayout } from "../shared/layout.js";
 import { initAuthModal } from "../shared/auth-modal.js";
 import { initNewsletter } from "../shared/newsletter.js";
 
+const DISCOUNT_THRESHOLD = 35;
+const DISCOUNT_RATE = 0.1;
+
 function renderCartItems(container) {
   const items = getDetailedCartItems();
 
@@ -60,12 +63,19 @@ function renderCartItems(container) {
 function renderSummary(elements) {
   const quantity = getCartQuantity();
   const subtotal = getCartSubtotal();
+  const discount = subtotal > DISCOUNT_THRESHOLD ? subtotal * DISCOUNT_RATE : 0;
+  const total = subtotal - discount;
 
   elements.subtotalLabel.textContent = `Subtotal (${quantity} ${
     quantity === 1 ? "item" : "items"
   })`;
   elements.subtotalElement.textContent = formatPrice(subtotal);
-  elements.totalElement.textContent = formatPrice(subtotal);
+  elements.discountRow.hidden = discount === 0;
+  elements.discountLabel.textContent = `Discount (${DISCOUNT_RATE * 100}% over ${formatPrice(
+    DISCOUNT_THRESHOLD,
+  )})`;
+  elements.discountElement.textContent = `-${formatPrice(discount)}`;
+  elements.totalElement.textContent = formatPrice(total);
 }
 
 function renderCartPage(elements) {
@@ -116,6 +126,9 @@ function initCartPage() {
     emptyState: document.querySelector("[data-cart-empty]"),
     subtotalLabel: document.querySelector("[data-summary-subtotal-label]"),
     subtotalElement: document.querySelector("[data-summary-subtotal]"),
+    discountRow: document.querySelector("[data-summary-discount-row]"),
+    discountLabel: document.querySelector("[data-summary-discount-label]"),
+    discountElement: document.querySelector("[data-summary-discount]"),
     totalElement: document.querySelector("[data-summary-total]"),
   };
 
@@ -125,6 +138,9 @@ function initCartPage() {
     !elements.emptyState ||
     !elements.subtotalLabel ||
     !elements.subtotalElement ||
+    !elements.discountRow ||
+    !elements.discountLabel ||
+    !elements.discountElement ||
     !elements.totalElement
   ) {
     return;
